@@ -1,4 +1,4 @@
-const Data = [
+const data = [
     {
         id: '1',
         question: "What is HTML?",
@@ -26,4 +26,4 @@ const Data = [
     }
 ];
 
-export default Data;
+export default data;
