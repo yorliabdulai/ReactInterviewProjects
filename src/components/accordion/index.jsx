@@ -3,7 +3,7 @@ import data from './data';
 export default function Accordion() { 
  const [selected, setSelected] = useState(null);
  function handleSingleSelection(getCurrentId){
-   setSelected(getCurrentId);
+   setSelected(getCurrentId === selected ? null : getCurrentId);
  }
   return <div className='wrapper'>
     <div className='accordion'>
