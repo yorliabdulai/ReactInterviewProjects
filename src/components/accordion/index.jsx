@@ -21,7 +21,7 @@ export default function Accordion() {
             </div> : null
           }
         </div>) 
-        :<div>No data found!</div> 
+        :<div>No data is found!</div> 
       }
      
     </div>
