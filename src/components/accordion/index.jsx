@@ -18,6 +18,7 @@ export default function Accordion() {
     else{
       cpyMultiple.splice(findIndexOfCurrentId, 1)
     }
+    setMultiple(cpyMultiple)
  }
 
   return <div className='wrapper'>
