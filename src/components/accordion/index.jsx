@@ -13,8 +13,11 @@ export default function Accordion() {
  function handleMultiselection(getCurrentId){
    let cpyMultiple = [...multiple];
    const findIndexOfCurrentId = cpyMultiple.indexOf(getCurrentId);
-    if(findIndexOfCurrentId === -1){
-      cpyMultiple.push(getCurrentId);
+    if(findIndexOfCurrentId === -1)
+      cpyMultiple.push(getCurrentId)
+    else{
+      cpyMultiple.splice(findIndexOfCurrentId, 1)
+    }
  }
 
   return <div className='wrapper'>
