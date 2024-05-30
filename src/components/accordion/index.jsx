@@ -11,7 +11,8 @@ export default function Accordion() {
    setSelected(getCurrentId === selected ? null : getCurrentId);
  }
  function handleMultiselection(getCurrentId){
-
+   let cpyMultiple = [...multiple];
+   const findIndexOfCurrentId = cpyMultiple.indexOf(getCurrentId);
  }
 
   return <div className='wrapper'>
