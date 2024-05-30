@@ -20,7 +20,7 @@ export default function Accordion() {
     }
     setMultiple(cpyMultiple)
  }
-
+ console.log(selected, multiple)
   return <div className='wrapper'>
     <button onClick={() => setEnableMultiSelection(!enableMultiSelection)}>Enable Multi Selection</button>
     <div className='accordion'>
@@ -33,10 +33,14 @@ export default function Accordion() {
             <span>+</span>
           </div>
           {
-           selected === dataItem.id ? <div className='content'>
+            enableMultiSelection ? multiple.indexOf(dataItem.id) !== -1 && (<div className='content'>
             {dataItem.answer}
-            </div> : null
+            </div>) : 
+            selected === dataItem.id && (<div className='content'>
+            {dataItem.answer}
+            </div>)
           }
+          
         </div>) 
         :<div>No data is found!</div> 
       }
