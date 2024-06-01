@@ -8,4 +8,4 @@ export default function RandomColor() {
     <button>Create RGB Color</button>
     <button>Generate Random Color</button>
   </div>
-}
+}   
