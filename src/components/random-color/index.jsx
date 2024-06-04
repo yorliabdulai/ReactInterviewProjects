@@ -11,9 +11,9 @@ export default function RandomColor() {
       width: '100vw',
       backgroundColor: color,
     }}>
-      <button>Create HEX Color</button>
-      <button>Create RGB Color</button>
-      <button>Generate Random Color</button>
+      <button onClick={()=> setTypeOfColor('hex')}>Create HEX Color</button>
+      <button onClick={() => setTypeOfColor('rgb')}>Create RGB Color</button>
+      <button onClick={handleCreateRandomColor}>Generate Random Color</button>
     </div>
   );
 }   
