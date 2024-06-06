@@ -24,6 +24,17 @@ export default function RandomColor() {
       <button onClick={()=> setTypeOfColor('hex')}>Create HEX Color</button>
       <button onClick={() => setTypeOfColor('rgb')}>Create RGB Color</button>
       <button onClick={handleCreateRandomColor}>Generate Random Color</button>
+     <div style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      color: 'white',
+      fontSize: '60px',
+      marginTop: '50px',
+     }}>
+     
+     </div>
     </div>
+
   );
 }   
