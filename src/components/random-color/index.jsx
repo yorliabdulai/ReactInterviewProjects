@@ -32,7 +32,8 @@ export default function RandomColor() {
       fontSize: '60px',
       marginTop: '50px',
      }}>
-     
+      <h1>{typeOfColor}</h1>
+     <h1>{color}</h1>
      </div>
     </div>
 
