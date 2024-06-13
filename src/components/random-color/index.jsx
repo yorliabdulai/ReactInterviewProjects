@@ -21,7 +21,7 @@ export default function RandomColor() {
       width: '100vw',
       backgroundColor: color,
     }}>
-      <button onClick={()=> setTypeOfColor('hex')}>Create HEX Color</button>
+      <button onClick={()=> setTypeOfColor('hex')}>Create a HEX Color</button>
       <button onClick={() => setTypeOfColor('rgb')}>Create a RGB Color</button>
       <button onClick={handleCreateRandomColor}>Generate a Random Color</button>
      <div style={{
